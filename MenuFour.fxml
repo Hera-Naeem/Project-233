@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="400.0" minWidth="850.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.HelloController">
+   <children>
+      <Button fx:id="findplaystyle" layoutX="61.0" layoutY="79.0" mnemonicParsing="false" onMouseClicked="#getPlaystyle" prefHeight="43.0" prefWidth="147.0" text="Find Playstyle Of Player" />
+      <Button fx:id="findHighest_KDA" layoutX="59.0" layoutY="144.0" mnemonicParsing="false" onMouseClicked="#getHighest" prefHeight="43.0" prefWidth="147.0" text="Find Highest KDA" />
+      <Button fx:id="above_age" layoutX="16.0" layoutY="206.0" mnemonicParsing="false" onMouseClicked="#getAgeHigher" prefHeight="43.0" prefWidth="163.0" text="Find Players Above Age of -" />
+      <Button fx:id="final_output" layoutX="61.0" layoutY="270.0" mnemonicParsing="false" onMouseClicked="#outputAll" prefHeight="43.0" prefWidth="147.0" text="Output All" />
+      <TextField fx:id="ageInput" layoutX="192.0" layoutY="206.0" prefHeight="43.0" prefWidth="69.0" />
+      <TextArea fx:id="specialOutputBox" layoutX="273.0" layoutY="49.0" prefHeight="303.0" prefWidth="556.0" />
+   </children>
+</AnchorPane>

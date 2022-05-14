@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="300.0" minWidth="500.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.HelloController">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="500.0">
+          <children>
+              <MenuBar VBox.vgrow="NEVER">
+                  <menus>
+                      <Menu mnemonicParsing="false" text="File">
+                          <items>
+                              <MenuItem fx:id="Save" mnemonicParsing="false" onAction="#saveButton" text="Save" />
+                              <MenuItem fx:id="Load" mnemonicParsing="false" onAction="#loadButton" text="Load" />
+                              <MenuItem fx:id="Quit" mnemonicParsing="false" onAction="#quitProgram" text="Quit" />
+                          </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Help">
+                          <items>
+                              <MenuItem fx:id="About" mnemonicParsing="false" onAction="#AboutProject" text="About" />
+                          </items>
+                      </Menu>
+                  </menus>
+              </MenuBar>
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="527.0" prefWidth="655.0">
+               <children>
+                  <Button fx:id="main_addTeam" layoutX="74.0" layoutY="90.0" mnemonicParsing="false" onMouseClicked="#MenuOne_AddTeam" prefHeight="34.0" prefWidth="127.0" text="Add Team" />
+                  <Label alignment="CENTER" layoutX="33.0" layoutY="28.0" prefHeight="47.0" prefWidth="351.0" text="Add Teams and Players">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="8.0" layoutY="154.0" prefHeight="47.0" prefWidth="403.0" text="Customize/look at player stats">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="menu_two" layoutX="131.0" layoutY="220.0" mnemonicParsing="false" onMouseClicked="#MenuTwo" prefHeight="34.0" prefWidth="157.0" text="Customize" />
+                  <Label alignment="CENTER" layoutX="19.0" layoutY="289.0" prefHeight="39.0" prefWidth="395.0" text="Output Teams and Players">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="menu_three" layoutX="138.0" layoutY="345.0" mnemonicParsing="false" onMouseClicked="#MenuThree" prefHeight="39.0" prefWidth="147.0" text="Output" />
+                  <Label alignment="CENTER" layoutX="79.0" layoutY="416.0" prefHeight="36.0" prefWidth="260.0" text="Special Output">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="menu_four" layoutX="153.0" layoutY="467.0" mnemonicParsing="false" onMouseClicked="#MenuFour" prefHeight="39.0" prefWidth="127.0" text="Special Display" />
+                  <Button fx:id="main_addPlayer" layoutX="231.0" layoutY="90.0" mnemonicParsing="false" onMouseClicked="#MenuOne_AddPlayer" prefHeight="34.0" prefWidth="127.0" text="Add Player" />
+               </children>
+                </AnchorPane>
+          </children>
+      </VBox>
+   </children>
+</AnchorPane>
